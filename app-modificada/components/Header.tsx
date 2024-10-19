@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes, { string } from 'prop-types'
 import { View, Text, Pressable, Button } from 'react-native'
 import { styles } from '../styles/MainStyles'
 
