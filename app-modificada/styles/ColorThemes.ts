@@ -19,7 +19,7 @@ export const lightTheme: Theme = {
     borderColor: 'black',
     avatarBorderColor: 'gray',
     itemBackgroundColor: 'silver',
-    itemTextColor: 'darkred',
+    itemTextColor: '#ea7f18',
   };
   
 export const darkTheme: Theme = {
@@ -31,5 +31,5 @@ export const darkTheme: Theme = {
     borderColor: '#fff',
     avatarBorderColor: '#fff',
     itemBackgroundColor: '#555',
-    itemTextColor: '#e0e0e0',
+    itemTextColor: '#ea7f18',
   };

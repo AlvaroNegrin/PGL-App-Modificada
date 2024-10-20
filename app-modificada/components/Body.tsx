@@ -21,21 +21,21 @@ const Body = ({displayMyQR, isDarkMode}: BodyProps) => {
         <View style={styles.bodyContainer}>
           <View>
             <View style={styles.profileWrapper}>
-              <Image style={styles.bodyAvatar} source={require('../assets/SofyanAmrabat.jpg')} />
+              <Image style={styles.bodyAvatar} source={require('../assets/images/ranita-feliz.png')} />
               <View style={styles.bodyDescription}>
                 <Text style={styles.descriptionTitle}>
                   Descripción sobre mí!
                 </Text>
                 <Text style={styles.descriptionText}>
-                  Soy profe y me gusta mi trabajo aunque a veces me de por enrevesar prácticas para mis queridos alumnos.
+                  Soy alumno, me llamo Álvaro y me gusta la programacion aunque a veces me pongo a leer manga en medio de clase.
                 </Text>
               </View>
             </View>
             <Text style={styles.bodyItemTitle}>
-              Cosas que me gustan mucho:
+              Ya que estamos, mis mangas favoritos:
             </Text>
             <FlatList style={styles.bodyItemList} data={cards} renderItem={({item}) => (
-                <Card info={item.info} isDarkMode={isDarkMode} />)} 
+                <Card image={item.image} info={item.info} isDarkMode={isDarkMode} />)} 
                 keyExtractor={(item, index) => `${index}-${item.info}`}>
             </FlatList>
           </View>
@@ -43,7 +43,7 @@ const Body = ({displayMyQR, isDarkMode}: BodyProps) => {
       ) : (
         <View style={styles.bodyContainer}>
           <View style={styles.qrCodeContainer}>
-            <QRCode value="https://github.com/adhernea" />
+            <QRCode value="https://github.com/AlvaroNegrin" />
           </View>
         </View>
       )}
