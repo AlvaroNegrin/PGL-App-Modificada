@@ -43,7 +43,7 @@ const Body = ({displayMyQR, isDarkMode}: BodyProps) => {
       ) : (
         <View style={styles.bodyContainer}>
           <View style={styles.qrCodeContainer}>
-            <QRCode value="https://github.com/adhernea" />
+            <QRCode value="https://github.com/AlvaroNegrin" />
           </View>
         </View>
       )}
