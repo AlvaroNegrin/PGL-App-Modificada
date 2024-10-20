@@ -2,6 +2,8 @@ import React from 'react'
 import { View, Text, Pressable, Button } from 'react-native'
 import { setMainStyles} from '../styles/MainStyles'
 import { Theme } from '../styles/ColorThemes'
+import Entypo from '@expo/vector-icons/Entypo';
+
 
 type HeaderProps = {
     title: string
@@ -20,7 +22,10 @@ export const Header = (props: HeaderProps) => {
         <Text style={styles.headerTitle}>{title}</Text>
         <View style={styles.buttonsContainer}>
         <Pressable style={styles.buttonWrapper} onPress={handleThemeMode}>
-          <Text style={{...styles.buttonText, ...styles.shadowEffect}}>Theme Mode</Text>
+          <Text style={{...styles.buttonText, ...styles.shadowEffect}}>
+            <Entypo style={styles.buttonText} name={isDarkMode ? "light-up" : "moon"} size={20}  />
+            Mode
+          </Text>
         </Pressable>
         <Pressable style={styles.buttonWrapper} onPress={onPressInfo}>
           <Text style={{...styles.buttonText, ...styles.shadowEffect}}>Mi info</Text>
