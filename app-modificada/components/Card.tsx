@@ -8,6 +8,6 @@ export type CardProps = {
 export const Card = (props: CardProps) => {
   const {info} = props;
   return (
-    <Text style={styles.cosasQmeGustanMuxoEstails}>{info}</Text>
+    <Text style={styles.bodyItem}>{info}</Text>
   )
 }

@@ -8,28 +8,33 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-    topContainer: {
+    headerContainer: {
       height: '15%',
       paddingTop: 50,
       width: '100%',
     },
-    firsttoprowContainer: {
+    headerTitle: {
       backgroundColor: 'gray',
       textAlign: 'center',
       fontWeight: 'bold',
       textAlignVertical: 'center',
       fontSize: 30,
     },
-    rowTopSecondContainer: {
+    buttonsContainer: {
       flexDirection: 'row',
       backgroundColor: 'darkgray',
       justifyContent: 'center',
       alignItems: 'center'
     },
-    buttonruta: {
+    buttonWrapper: {
       width:'50%',
     },
-    bodystails: {
+    buttonText: {
+      color: 'white', 
+      fontWeight: 'bold', 
+      textTransform: 'uppercase'
+    },
+    bodyContainer: {
       width: '100%',
       borderWidth: 2,
       borderColor: 'black',
@@ -37,12 +42,42 @@ export const styles = StyleSheet.create({
       justifyContent: 'space-between',
       height: '85%'
     },
-    avatar: {
+    profileWrapper: {
+      flexDirection: 'row', 
+      alignItems: 'center' 
+    },
+    bodyAvatar: {
       height: 90,
       width: 90,
       borderRadius: 100
     },
-    cosasQmeGustanMuxoEstails: {
+    bodyDescription: { 
+      margin: 10, 
+      backgroundColor: 'lightgray', 
+      padding: 10, 
+      borderRadius: 10, 
+      width: '70%' 
+    },
+    descriptionTitle: { 
+      textAlign: 'center', 
+      fontWeight: '700', 
+      fontSize: 20 
+    },
+    descriptionText: {  
+      textAlign: 'center',
+    },
+    bodyItemTitle: {  
+      color: 'darkred',  
+      fontWeight: '900',
+      textTransform: 'capitalize',
+      fontSize: 20,
+      textAlign: 'center',
+    },
+    bodyItemList: { 
+      padding: 10,
+    },
+    
+    bodyItem: {
       borderColor: 'black',
       borderWidth: 1,
       borderStyle: 'dashed',
@@ -54,14 +89,14 @@ export const styles = StyleSheet.create({
       fontSize: 16,
       backgroundColor: 'silver'
     },
-    CentrarcodigoQR: {
+    qrCodeContainer: {
       justifyContent: 'center',
       borderWidth: 1,
       width: '100%',
       height: '100%',
       alignItems: 'center'
     },
-    shadoxboxing: {
+    shadowEffect: {
       shadowColor: "#000",
       shadowOffset: {
         width: 0,

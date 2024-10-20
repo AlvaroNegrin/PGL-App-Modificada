@@ -11,13 +11,13 @@ type HeaderProps = {
 export const Header = (props: HeaderProps) => {
     const {title, onPressInfo, onPressRepo} = props
   return (
-      <View style={styles.topContainer}>
-        <Text style={styles.firsttoprowContainer}>{title}</Text>
-        <View style={styles.rowTopSecondContainer}>
-        <Pressable style={styles.buttonruta} onPress={onPressInfo}>
-          <Text style={{...{color: 'white', fontWeight: 'bold', textTransform: 'uppercase'}, ...styles.shadoxboxing}}>Mi info</Text>
+      <View style={styles.headerContainer}>
+        <Text style={styles.headerTitle}>{title}</Text>
+        <View style={styles.buttonsContainer}>
+        <Pressable style={styles.buttonWrapper} onPress={onPressInfo}>
+          <Text style={{...styles.buttonText, ...styles.shadowEffect}}>Mi info</Text>
         </Pressable>
-        <Button onPress={onPressRepo} title="Mi Repo" color="light-gray" accessibilityLabel='Un botón pal QR' />
+        <Button onPress={onPressRepo} title="Mi Repo" color="light-gray" accessibilityLabel='A button that shows a QR code' />
         </View>
       </View>
       
