@@ -37,7 +37,6 @@ import { Theme } from './ColorThemes';
     },
     bodyContainer: {
       width: '100%',
-      borderWidth: 2,
       borderColor: theme.borderColor,
       alignItems: 'center',
       justifyContent: 'space-between',
@@ -110,11 +109,9 @@ import { Theme } from './ColorThemes';
     },
     qrCodeContainer: {
       justifyContent: 'center',
-      borderWidth: 1,
       width: '100%',
       height: '100%',
       alignItems: 'center',
-      borderColor: theme.borderColor,
     },
     shadowEffect: {
       shadowColor: "#000",

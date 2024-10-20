@@ -17,8 +17,10 @@ type HeaderProps = {
 export const Header = (props: HeaderProps) => {
     const {title, onPressInfo, onPressRepo, handleThemeMode, isDarkMode, theme} = props
     const styles = setMainStyles(theme);
+
+    // Vibra durante 1 segundo
     const handleVibrate = () => {
-        Vibration.vibrate(2000); // Vibra durante 1 segundo
+        Vibration.vibrate(2000); 
       };
   return (
       <View style={styles.headerContainer}>
