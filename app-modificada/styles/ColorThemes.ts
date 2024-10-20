@@ -1,4 +1,16 @@
-export const lightTheme = {
+export type Theme = {
+    backgroundColor: string
+    textColor: string
+    headerBackground: string
+    buttonBackground: string
+    buttonTextColor: string
+    borderColor: string
+    avatarBorderColor: string
+    itemBackgroundColor: string
+    itemTextColor: string
+  }
+
+export const lightTheme: Theme = {
     backgroundColor: '#fff',
     textColor: '#000',
     headerBackground: 'gray',
@@ -10,7 +22,7 @@ export const lightTheme = {
     itemTextColor: 'darkred',
   };
   
-export const darkTheme = {
+export const darkTheme: Theme = {
     backgroundColor: '#121212',
     textColor: '#fff',
     headerBackground: '#333',
