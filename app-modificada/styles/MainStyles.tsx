@@ -28,7 +28,7 @@ import { Theme } from './ColorThemes';
       alignItems: 'center',
     },
     buttonWrapper: {
-      width: '33%',
+      width: '25%',
     },
     buttonText: {
       color: theme.buttonTextColor, 
