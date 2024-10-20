@@ -1,16 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { FlatList, Image, ScrollView, Text, View } from 'react-native'
-import { styles } from '../styles/MainStyles'
+import { setMainStyles } from '../styles/MainStyles'
 import QRCode from 'react-native-qrcode-svg'
 import { Card } from './Card'
 import { cards } from '../data/Cards'
+import { darkTheme, lightTheme, Theme } from '../styles/ColorThemes'
 
 type BodyProps = {
     displayMyQR: boolean
+    isDarkMode: boolean
 }
 
-const Body = ({displayMyQR}: BodyProps) => {
+const Body = ({displayMyQR, isDarkMode}: BodyProps) => {
+    const theme = isDarkMode ? darkTheme : lightTheme; 
+    const styles = setMainStyles(theme);
   return (
     <>
       {displayMyQR ? (
@@ -31,7 +35,7 @@ const Body = ({displayMyQR}: BodyProps) => {
               Cosas que me gustan mucho:
             </Text>
             <FlatList style={styles.bodyItemList} data={cards} renderItem={({item}) => (
-                <Card info={item.info} />)} 
+                <Card info={item.info} isDarkMode={isDarkMode} />)} 
                 keyExtractor={(item, index) => `${index}-${item.info}`}>
             </FlatList>
           </View>
